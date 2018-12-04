@@ -21,7 +21,7 @@
     <modules>
         <module>common</module>
         <module>interfaces</module>
-        <module>service</module>
+        <module>services</module>
         <module>web</module>
     </modules>
 
@@ -55,7 +55,7 @@
             </dependency>
             <dependency>
                 <groupId>com.tss.admin</groupId>
-                <artifactId>service</artifactId>
+                <artifactId>services</artifactId>
                 <version>1.0.0</version>
             </dependency>
             <dependency>

@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>admin</artifactId>
-        <groupId>com.tss.admin</groupId>
-        <version>1.0.0</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <artifactId>services</artifactId>
-    <packaging>jar</packaging>
-    <name>services</name>
-    <description>services</description>
+	<groupId>com.tss.admin</groupId>
+	<artifactId>services</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
-    <dependencies>
-        <!-- spring cloud -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
+	<name>services</name>
+	<description>Demo project for Spring Boot</description>
 
-        <!-- spring boot -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+	<parent>
+		<groupId>com.tss.admin</groupId>
+		<artifactId>admin</artifactId>
+		<version>1.0.0</version>
+	</parent>
 
-        <!-- admin -->
-        <dependency>
-            <groupId>com.tss.admin</groupId>
-            <artifactId>interfaces</artifactId>
-        </dependency>
-    </dependencies>
+	<dependencies>
+		
+		<dependency>
+			<groupId>com.tss.admin</groupId>
+			<artifactId>interfaces</artifactId>
+		</dependency>
+
+		<!-- spring boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 
 </project>

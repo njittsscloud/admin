@@ -55,7 +55,7 @@
 		<!-- data -->
 		<dependency>
 			<groupId>com.tss.admin</groupId>
-			<artifactId>service</artifactId>
+			<artifactId>services</artifactId>
 		</dependency>
 
 	</dependencies>
